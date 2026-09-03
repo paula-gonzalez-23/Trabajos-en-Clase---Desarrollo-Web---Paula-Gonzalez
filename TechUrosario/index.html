@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> <!-- Sirve como atributo para tomar las tildes, etc -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer sitio web</title>
+</head>
+
+<body>
+    <h1>Bienvenido a mi sitio web</h1>
+    <p>Este es mi primer párrafo.</p>
+    <strong>Este es un texto en negrita.</strong>
+    <em>Este es un texto en cursiva.</em>
+    <sub>Este es un texto en subíndice.</sub>
+    <p> Logramos <u> clasificar </u> a <strong> nacionales de Ascun </strong> </p>
+
+
+    <img src="../imagenes/Moneda.jpg" alt="Imagen 1">
+
+    <img src="../imagenes/Paisaje.jpg" alt="Imagen 2">
+
+
+
+</body>
+<div id="imagenes">
+    <!-- Bucle para poder repetir una imagen N veces.  -->
+    <script>
+        for (let i = 0; i <= 5; i++) {
+            document.getElementById("imagenes").innerHTML += `<img src="../imagenes/Paisaje.jpg" alt="Imagen ${i}">`;
+        }
+    </script>
+
+    <table border=1 cellpadding=10 cellsacing=0>
+        <caption><strong>Agenda Semanal
+            </strong></caption>
+        <tr>
+            <th> Hora </th>
+            <th> Lunes </th>
+            <th> Martes </th>
+        </tr>
+        <tr>
+            <th>7:00 am</th>
+            <td colspan="2">Desayuno </td>
+        </tr>
+        <tr>
+            <th>8:00 am</th>
+            <td>Reunión</td>
+            <td>Clase</td>
+        </tr>
+    </table>
+
+    <table border=1 cellpadding=10 cellsacing=0>
+        <caption><strong>Agenda Semanal</strong></caption>
+        <tr>
+            <th> Hora </th>
+            <th> Lunes </th>
+            <th> Martes </th>
+        </tr>
+        <tr>
+            <th>7:00 am</th>
+            <td rowspan="2">Reunión Jefe </td>
+            <td>Desayuno</td>
+        </tr>
+        <tr>
+            <th>8:00 am</th>
+            <td>Informe</td>
+        </tr>
+    </table>
+</div>
+
+</html>
