@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+
+<body>
+
+    <style>
+            body {
+                background-image: url(./imagenes/fondo.png);
+                background-size: cover;
+            }
+        </style>
+
+    <h1>Contact form</h1>
+
+    <p>
+        Please fill your information and we'll be sending your order in no time.
+    </p>
+
+    <form>
+
+        <label>Your Name</label>
+        
+        
+        <input type="text" name="firstName" placeholder="First Name">
+        <input type="text" name="lastName" placeholder="Last Name">
+
+        <br><br>
+
+        <label>Your Email</label>
+
+
+        <input type="email" name="email" placeholder="e.g hello@contact.net">
+
+        <br><br>
+
+        <label>Phone*</label>
+        
+        <input type="text" name="phone1" placeholder="###">
+        <input type="text" name="phone2" placeholder="###">
+        <input type="text" name="phone3" placeholder="####">
+
+        <br><br>
+
+        <label>Message Subject*</label>
+    
+
+         <select name="subject">
+            <option value="other">Other</option>
+            <option value="question">Question</option>
+            <option value="order">Order</option>
+            <option value="complaint">Complaint</option>
+        </select>
+
+        <br><br>
+
+        <label>Message*</label> 
+
+        <br>
+        
+        <textarea name="message" rows="8" cols="50"></textarea>
+
+        <br><br>
+
+        <label>Verification*</label>
+
+        <input type="checkbox" name="verification">
+        <label>I'm not a robot</label>
+
+        <br><br>
+
+        <button type="submit">SUBMIT FORM</button>
+
+
+
+    </form>
+</body>
+</html>
+
