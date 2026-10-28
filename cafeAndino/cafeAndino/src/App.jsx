@@ -1,4 +1,5 @@
 import { Header } from './components/Header';
+import { Footer } from './components/Footer';
 
 
 const NOMBRE_SITIO = 'Café Andino';
@@ -21,11 +22,24 @@ function App() {
           { texto: 'Contacto', href: '#contacto' },
         ]}
       />
+
+      <main>
+        {/* Aquí va el contenido principal de tu página */}
+      </main>
+      
+      <Footer
+        nombreSitio={NOMBRE_SITIO}
+        enlaces={[
+          { texto: 'Sobre Nosotros', href: '#nosotros' },
+          { texto: 'Preguntas Frecuentes', href: '#preguntas' },
+          { texto: 'Política de privacidad', href: '#privacidad' },
+        ]}
+        copyright={`© ${ANIO_ACTUAL} Café Andino. Todos los derechos reservados.`}
+      />
+
+
     </>
   );
 }
 
 export default App;
-
-
-
